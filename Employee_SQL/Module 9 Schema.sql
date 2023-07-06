@@ -38,7 +38,7 @@ Create Table employees(
 SELECT * FROM dept_emp;
 
 CREATE TABLE salaries (
-  emp_no INT,
+  emp_no INT Primary Key,
   FOREIGN KEY (emp_no) REFERENCES employees(emp_no),
   salary INT
 );
